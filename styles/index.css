@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root{
+    --background:#efeae1;
+    --foreground:#daceb9;
+    --accent:#e3b261;
+    --text: #100c08;
+
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /*use  100 - 900 for proper weight*/
+  font-style: normal;
+
+  background-color: var(--background);
+}
+
+h1 {
+  font-size: 48px;
+  font-family: "Inknut Antiqua", serif;
+}
+p {
+  font-size: 16px;
+}
+
+.inter-regular {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /*use  100 - 900 for proper weight*/
+  font-style: normal;
+}
+.inter-light {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 300; /*use  100 - 900 for proper weight*/
+  font-style: normal;
+}
+
+.container {
+  display: flex;
+}
+
+.divider{
+    height: 6px;
+    max-width: 680px;
+    margin: 64px auto;
+
+    background-color: var(--accent) ;
+}
+
+.hero {
+  margin-top: 64px;
+
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+.hero p {
+  max-width: 500px;
+
+  text-align: center;
+}
+
+.recipies {
+  display: flex;
+
+  justify-content: center;
+  gap: 20px;
+
+  list-style-type: none;
+}
+.card {
+  padding: 16px;
+
+  border-radius: 20px;
+  aspect-ratio: 2 / 3;
+  background-color: var(--foreground);
+}
+.card a {
+  text-decoration: none;
+}
