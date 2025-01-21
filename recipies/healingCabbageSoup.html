@@ -1,38 +1,45 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../styles/recipes.css">
-</head>
-<body>
-    <div class="nav" id="top">
-      <div class="logo">
-        <img src="../odin.svg" alt="Odin logo">
-        <p>Odin Recipes</p>
+    <link rel="stylesheet" href="../styles/recipes.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav flex-container" id="top">
+        <a href="../index.html" class="logo flex-container">
+          <img src="../odin.svg" alt="Odin logo" />
+          <span class="inknut-regular">Odin Recipes</span>
+        </a>
+
+        <a href="../index.html" class="home-button flex-container">
+          <img src="../home.svg" width="25" alt="home icon" />
+          <span>Home</span>
+        </a>
+      </nav>
+    </header>
+
+    <section class="hero flex-container padded">
+      <div class="headline">
+        <h1>Healing Cabbage Soup</h1>
+        <p>
+          My body craves this cabbage soup whenever I have a cold, but it's
+          equally delicious on a cold winter's night. It's so easy to make; add
+          extra vegetables, leftover chicken, or rice for a more substantial
+          meal.
+        </p>
+        <button>
+          <img src="../cookie.svg" alt="cookie" />
+          COOK MY MEAL
+        </button>
       </div>
-
-      <a href="../index.html" class="home-button">
-        <img src="../home.svg" alt="home icon">
-        <span>Home</span>
-      </a>
-    </div>
-
-    <h1>Healing Cabbage Soup</h1>
-    <p>
-      My body craves this cabbage soup whenever I have a cold, but it's equally
-      delicious on a cold winter's night. It's so easy to make; add extra
-      vegetables, leftover chicken, or rice for a more substantial meal.
-    </p>
-    <button>
-      <img src="../cookie.svg" alt="cookie">
-      COOK MY MEAL
-    </button>
-    <img
-      src="./img/healing-cabbage-soup.webp"
-      alt="Warm Healing Cabbage Soup"
-      width="560"
-    />
+      <img
+        src="./img/healing-cabbage-soup.webp"
+        alt="Warm Healing Cabbage Soup"
+        width="560"
+      />
+    </section>
 
     <h2>Ingredients</h2>
     <ul>
@@ -71,8 +78,8 @@
       <a href="../index.html">Go Back Home</a>
     </div>
 
-    <div class="footer">
+    <footer>
       <span>Made by Arki as part of the Odin Recipie project</span>
-    </div>
-</body>
+    </footer>
+  </body>
 </html>

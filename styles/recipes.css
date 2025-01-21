@@ -6,6 +6,13 @@
   --foreground: #daceb9;
   --accent: #e3b261;
   --text: #100c08;
+
+  --s: 8px;
+  --m: 12px;
+  --xl: 40px;
+
+  --hpad: 105px;
+  --vpad: 188px;
 }
 
 * {
@@ -19,6 +26,9 @@ body {
   font-weight: 400; /*use  100 - 900 for proper weight*/
   font-style: normal;
 }
+section {
+  height: calc(100vh);
+}
 
 h1 {
   font-size: 48px;
@@ -26,4 +36,59 @@ h1 {
 }
 p {
   font-size: 16px;
+}
+
+.inknut-regular {
+  font-family: "Inknut Antiqua", serif;
+  font-size: 16px;
+}
+.inter-regular {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /*use  100 - 900 for proper weight*/
+  font-style: normal;
+}
+.inter-light {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 300; /*use  100 - 900 for proper weight*/
+  font-style: normal;
+}
+
+.flex-container {
+  display: flex;
+}
+.padded {
+  padding: var(--vpad) var(--hpad);
+}
+
+.nav {
+  max-height: 80px;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 16px var(--hpad);
+  background-color: var(--background);
+}
+.home-button {
+  align-items: center;
+  text-decoration: none;
+  color: var(--text);
+  gap: var(--m);
+}
+
+.logo {
+  align-items: center;
+  gap: var(--m);
+
+  color: var(--text);
+  text-decoration: none;
+}
+
+.hero {
+  height: calc(100vh - 80px);
+  background-color: var(--background);
+}
+.hero button{
+    display: block;
 }
