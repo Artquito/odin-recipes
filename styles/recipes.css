@@ -3,6 +3,7 @@
 
 :root {
   --background: #efeae1;
+  --background50: hsl(39, 20%, 95%);
   --foreground: #daceb9;
   --accent: #e3b261;
   --text: #100c08;
@@ -31,7 +32,8 @@ section {
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 40px;
+  line-height: 80px;
   font-family: "Inknut Antiqua", serif;
 }
 p {
@@ -41,6 +43,12 @@ p {
 .inknut-regular {
   font-family: "Inknut Antiqua", serif;
   font-size: 16px;
+}
+.inter-bold {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 800; /*use  100 - 900 for proper weight*/
+  font-style: normal;
 }
 .inter-regular {
   font-family: "Inter", serif;
@@ -88,7 +96,74 @@ p {
 .hero {
   height: calc(100vh - 80px);
   background-color: var(--background);
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
 }
-.hero button{
-    display: block;
+.hero > img{
+  height: 532px;
+  border-radius: 8px;
+}
+
+.headline p{
+  width: 780px;
+  margin-bottom: var(--xl);
+
+  font-size: 20px;
+  line-height: 40px;
+}
+.headline span{
+  font-size: 14px;
+}
+.headline img{
+  height: 30px;
+}
+.headline button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  width: 240px;
+  background-color: var(--accent);
+  border: none;
+  padding: var(--m);
+}
+
+.ingredients{
+  height: 100vh;
+  box-sizing: border-box;
+}
+.ingredients h2{
+  font-size: 32px;
+  color: var(--accent);
+}
+.ingredients .line{
+  height: 2px;
+  width: 300px;
+  background-color: var(--accent);
+  margin-bottom: var(--xl);
+}
+.ingredients ul {
+  margin-left: var(--xl);
+  line-height: 40px;
+}
+
+.steps{
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: var(--background50);
+}
+.steps h2{
+  font-size: 32px;
+  color: var(--accent);
+}
+.steps .line{
+  height: 2px;
+  width: 200px;
+  background-color: var(--accent);
+  margin-bottom: var(--xl);
+}
+.steps ol {
+  margin-left: var(--xl);
+  line-height: 40px;
 }
